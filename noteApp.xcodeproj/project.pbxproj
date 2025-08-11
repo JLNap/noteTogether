@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AC095C3C2E2CF21B0068ABD8 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = AC095C3B2E2CF21B0068ABD8 /* Lottie */; };
+		AC095D342E2F911A0068ABD8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AC095D332E2F911A0068ABD8 /* FirebaseAuth */; };
+		AC095D742E3275460068ABD8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AC095D732E3275460068ABD8 /* FirebaseFirestore */; };
+		AC095D762E3276DA0068ABD8 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AC095D752E3276DA0068ABD8 /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		AC095C102E2CEE900068ABD8 /* noteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +30,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC095C3C2E2CF21B0068ABD8 /* Lottie in Frameworks */,
+				AC095D762E3276DA0068ABD8 /* FirebaseStorage in Frameworks */,
+				AC095D342E2F911A0068ABD8 /* FirebaseAuth in Frameworks */,
+				AC095D742E3275460068ABD8 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +44,7 @@
 			isa = PBXGroup;
 			children = (
 				AC095C122E2CEE900068ABD8 /* noteApp */,
+				AC095D322E2F911A0068ABD8 /* Frameworks */,
 				AC095C112E2CEE900068ABD8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +55,13 @@
 				AC095C102E2CEE900068ABD8 /* noteApp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AC095D322E2F911A0068ABD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +84,10 @@
 			);
 			name = noteApp;
 			packageProductDependencies = (
+				AC095C3B2E2CF21B0068ABD8 /* Lottie */,
+				AC095D332E2F911A0068ABD8 /* FirebaseAuth */,
+				AC095D732E3275460068ABD8 /* FirebaseFirestore */,
+				AC095D752E3276DA0068ABD8 /* FirebaseStorage */,
 			);
 			productName = noteApp;
 			productReference = AC095C102E2CEE900068ABD8 /* noteApp.app */;
@@ -86,14 +109,19 @@
 				};
 			};
 			buildConfigurationList = AC095C0B2E2CEE900068ABD8 /* Build configuration list for PBXProject "noteApp" */;
-			developmentRegion = en;
+			developmentRegion = ru;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = AC095C072E2CEE900068ABD8;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AC095C3A2E2CF21B0068ABD8 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				AC095D312E2F90F00068ABD8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AC095C112E2CEE900068ABD8 /* Products */;
 			projectDirPath = "";
@@ -256,6 +284,7 @@
 				DEVELOPMENT_TEAM = 2774WP8KN9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Пап купи";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +313,7 @@
 				DEVELOPMENT_TEAM = 2774WP8KN9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Пап купи";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,6 +354,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC095C3A2E2CF21B0068ABD8 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.2;
+			};
+		};
+		AC095D312E2F90F00068ABD8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC095C3B2E2CF21B0068ABD8 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC095C3A2E2CF21B0068ABD8 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+		AC095D332E2F911A0068ABD8 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC095D312E2F90F00068ABD8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		AC095D732E3275460068ABD8 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC095D312E2F90F00068ABD8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		AC095D752E3276DA0068ABD8 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC095D312E2F90F00068ABD8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC095C082E2CEE900068ABD8 /* Project object */;
 }
